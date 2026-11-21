@@ -363,11 +363,12 @@ def esc(s: str) -> str:
 # --------------------------------------------------------------------------------------
 WAYPOINTS = [
     # x, y, anchor, year, role, org, detail
-    (90, 196, "start", "2016 – 2020", "B.E. Electrical & Electronics", "Goa College of Engineering", "electrical · electronics · control"),
-    (300, 116, "middle", "2020 – 2023", "Application Development Engineer", "YASKAWA India · Bengaluru", "PLCs · servo & motion control · cobots · 70+ projects"),
-    (500, 196, "middle", "2024 – now", "M.Sc. EE & IT (Automation)", "Hochschule Darmstadt", "robotics · vision · adaptive control · IIoT"),
-    (700, 116, "middle", "2025 – 2026", "Intern · Industrial Metaverse Lab", "Siemens AG · Munich", "LLM-driven 3-arm robot cell · digital twins"),
-    (910, 196, "end", "2026 – now", "Working Student · Humanoid Robotics", "Infineon Technologies · Munich", "systems integration · benchmarking"),
+    (60, 196, "start", "2016 – 2020", "B.E. Electrical & Electronics", "Goa College of Engineering", "electrical · electronics"),
+    (240, 116, "middle", "2020 – 2023", "Application Development Engineer", "YASKAWA India · Bengaluru", "PLCs · motion control · cobots · 70+ projects"),
+    (420, 196, "middle", "2024 – now", "M.Sc. EE & IT (Automation)", "Hochschule Darmstadt", "robotics · vision · control · IIoT"),
+    (580, 116, "middle", "2025 – 2026", "Intern · Industrial Metaverse Lab", "Siemens AG · Munich", "LLM robot cell · digital twins"),
+    (760, 196, "middle", "2026", "Working Student · Humanoid Robotics", "Infineon Technologies · Munich", "systems integration · benchmarking"),
+    (940, 116, "end", "2026 – 2027", "Master's Thesis", "Infineon Technologies AG · Austria", "Virtualization in Humanoid Robotics"),
 ]
 
 
@@ -429,7 +430,7 @@ def journey(theme: str) -> str:
         stem_to = y - 12 if up else y + 12
         stem_from = y0 + 70 if up else y0 - 16
         labels.append(f'<path d="M{x} {stem_from}V{stem_to}" stroke="{c["faint"]}" stroke-dasharray="2 3"/>')
-        ring = c["accent2"] if now else c["accent"]
+        ring = c["accent2"] if now or i == len(WAYPOINTS) - 1 else c["accent"]
         labels.append(f'<circle cx="{x}" cy="{y}" r="7" fill="{c["node"]}" stroke="{ring}" stroke-width="2.5"/>'
                       f'<circle cx="{x}" cy="{y}" r="2.6" fill="{ring}"/>')
     pulse = (f'<circle cx="{WAYPOINTS[-1][0]}" cy="{WAYPOINTS[-1][1]}" r="7" fill="none" stroke="{c["accent2"]}" stroke-width="2">'
@@ -440,7 +441,7 @@ def journey(theme: str) -> str:
              f'<g stroke-width="2.4" stroke-linecap="round"><path d="M0 0h18" stroke="#ff5c5c"/><path d="M0 0v-18" stroke="#3ecf7a"/></g>'
              f'<circle r="4.5" fill="{c["accent"]}" stroke="{c["node"]}" stroke-width="1.5"/></g>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 310" width="1000" height="310" role="img" aria-labelledby="t">
-<title id="t">Career trajectory: B.E. at Goa College of Engineering (2016–2020); Application Development Engineer at YASKAWA India (2020–2023); M.Sc. Automation at Hochschule Darmstadt (2024–now); Intern at the Siemens Industrial Metaverse Lab (2025–2026); Working Student in humanoid robotics at Infineon Technologies (2026–now).</title>
+<title id="t">Career trajectory: B.E. at Goa College of Engineering (2016–2020); Application Development Engineer at YASKAWA India (2020–2023); M.Sc. Automation at Hochschule Darmstadt (2024–now); Intern at the Siemens Industrial Metaverse Lab (2025–2026); Working Student in humanoid robotics at Infineon Technologies, Munich (2026); Master's thesis on virtualization in humanoid robotics at Infineon Technologies AG, Austria (2026–2027).</title>
 <path id="traj" d="{d}" fill="none" stroke="{c["accent"]}" stroke-opacity=".55" stroke-width="2.2" stroke-dasharray="7 6" stroke-linecap="round"/>
 {"".join(labels)}{pulse}{frame}
 </svg>

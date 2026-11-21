@@ -98,7 +98,7 @@ Every public repository, sorted by where it sits between photons and PLCs.
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg">
-    <img src="assets/journey-light.svg" alt="Career trajectory: B.E. at Goa College of Engineering (2016–2020); Application Development Engineer at YASKAWA India (2020–2023); M.Sc. Automation at Hochschule Darmstadt (2024–now); Intern at the Siemens Industrial Metaverse Lab (2025–2026); Working Student in humanoid robotics at Infineon Technologies (2026–now)." width="100%">
+    <img src="assets/journey-light.svg" alt="Career trajectory: B.E. at Goa College of Engineering (2016–2020); Application Development Engineer at YASKAWA India (2020–2023); M.Sc. Automation at Hochschule Darmstadt (2024–now); Intern at the Siemens Industrial Metaverse Lab (2025–2026); Working Student in humanoid robotics at Infineon Technologies, Munich (2026); Master's thesis on virtualization in humanoid robotics at Infineon Technologies AG, Austria (2026–2027)." width="100%">
   </picture>
 </p>
 
