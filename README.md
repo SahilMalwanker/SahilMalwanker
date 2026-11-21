@@ -11,7 +11,7 @@
   <img alt="Based in Munich, Germany" src="https://img.shields.io/badge/Based_in-Munich,_DE-ffb020?style=for-the-badge&labelColor=0d1117">
 </p>
 
-I'm Sahil, a robotics and automation engineer. I spent three years commissioning PLCs, servo drives and cobots at **YASKAWA**, built an LLM-driven three-arm robot cell and its digital twins at the **Siemens Industrial Metaverse Lab**, and now work on **humanoid robotics at Infineon** while finishing my M.Sc. in Automation at Hochschule Darmstadt.
+I'm Sahil, a robotics and automation engineer. I spent three years commissioning PLCs, servo drives and cobots at **YASKAWA**, built an LLM-driven three-arm robot cell and its digital twins at the **Siemens Industrial Metaverse Lab**, and now work as a **Working Student in Humanoid Robotics at Infineon** in Munich, on systems integration and technology benchmarking. Next, I'm writing my **Master's thesis on Virtualization in Humanoid Robotics at Infineon Technologies AG, Austria** (2026–2027) to complete my M.Sc. in Automation at Hochschule Darmstadt.
 
 One rule runs through everything below: **simulate it, measure it, then move the robot.** Most of these repositories pair a model or digital twin with real measurements (a 1 kHz test rig, a real UR5, a lab camera, a live PLC) and report the gap honestly.
 
