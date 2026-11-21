@@ -463,7 +463,7 @@ TOOLS = [
     ("NETWORKS & IIOT", "#c084fc", "#8b3fd9", ["OPC UA", "PROFINET", "EtherNet/IP", "EtherCAT", "MECHATROLINK-III",
                                               "Modbus", "MQTT", "Node-RED", "OpenSearch"]),
     ("PERCEPTION & AI", "#ff7a90", "#c8324f", ["OpenCV", "stereo vision", "hand–eye calibration", "visual servoing",
-                                              "scikit-learn", "LLM tool calling", "Azure OpenAI", "synthetic data"]),
+                                              "policy learning (ES · ARS)", "scikit-learn", "LLM tool calling", "Azure OpenAI", "synthetic data"]),
     ("SOFTWARE", "#9fb0c6", "#59636e", ["Python", "C++", "TypeScript", "FastAPI", "React", "Docker", "Linux",
                                        "pytest · CI", "Git"]),
 ]
